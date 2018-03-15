@@ -38,8 +38,8 @@ public class WarmUp
                     System.out.println(person1+" Does Not Exist");
                 else if (!family.containsVertex(person2))
                     System.out.println(person2+" Does Not Exist");
-                /*else if(person1.equals(person2))
-                    System.out.println("Same Names!");*/
+                else if(person1.equals(person2))
+                    System.out.println("Same Names!");
                 else 
 		{
 		    NaiveLcaFinder<String, DefaultEdge> lcaFinder = new NaiveLcaFinder<>(family);
